@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Tomatoes;
+    src: url(font/Tomatoes-O8L8.ttf);
+}
+@font-face {
+    font-family: Playfair;
+    src: url(font/PlayfairDisplay-Regular.ttf);
+}
+body, header, main, footer{ 
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Playfair, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* header */
+header{
+    background-image: url(image/banner-2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h3 {
+    color: #ffffff;
+    font-family: Tomatoes, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 4%;
+    font-size: 2rem;
+}
+
+#menu-list, #close-button  {
+    display: none;
+}
+
+#burger-menu{
+    display: flex;
+    margin-right: 1%;
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes FadeOut {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(40px);
+        display: none;
+	}
+    
+}
+
+#menu-list{
+    list-style-type: none;
+    animation: FadeIn 1.5s ease 0s 1 normal forwards;
+    animation-play-state: paused;
+}
+
+#menu-list > li{
+    margin: 10px;
+}
+
+#menu-list > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* section presentation */
+
+#presentation-section{
+    background-color: #040732;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#photo-presentation{
+    width: 20%;
+    margin: 1%;
+}
+
+#photo-presentation > img { 
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(44, 70, 193, 0.7), 0 6px 20px 0 rgba(44, 70, 193, 0.7);
+    /* border: 10px solid rgba(44, 70, 193, 1); */
+}
+
+#text-presentation{
+    padding : 2%;
+    color: #b1ccf7;
+    width: 70%;
+}
+
+#text-presentation > h1{
+    font-family:Tomatoes, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+h2{
+    text-align: center;
+}
+
+q{
+    font-style: italic;
+}
+#social-medias{
+    text-align: end;
+}
+
+#social-medias > a {
+    text-decoration: none;
+}
+
+#quote{
+    background-color: rgba(44, 70, 193, 0.1);
+    border-radius: 10%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#quote > p{
+   text-align: end;
+   margin: 0;
+}
