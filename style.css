@@ -141,3 +141,14 @@ q{
    text-align: end;
    margin: 0;
 }
+
+/* Barre de technologie */
+
+#techno-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.progress-bar{
+    display: none;
+}
