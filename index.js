@@ -27,9 +27,9 @@ var technolist = [
     {nom : 'python', achievementPercentage : 0.3}
 ];
 
-//le stroke correspond au périmètre du cercle (pi * 2 * r)
+//le stroke correspond au périmètre du cercle (π * 2 * r)
 technolist.forEach((techno)=>{
-    var percentToStroke = 218-(techno.achievementPercentage)*218
+    var percentToStroke = 190-(techno.achievementPercentage)*190
     document.getElementsByClassName(techno.nom)[0].style.setProperty('--strokeVar', percentToStroke)
 })
 
@@ -42,4 +42,10 @@ document.getElementById('techno-progress-bar').addEventListener("mouseout",()=>{
     document.getElementById('techno-progress-bar').style.display = 'none';
 })
 
+document.getElementById('truc').addEventListener("mouseover",()=>{
+    document.getElementById('modal').style.display = 'block';
+})
 
+document.getElementById('modal').addEventListener("mouseout",()=>{
+    document.getElementById('modal').style.display = 'none';
+})

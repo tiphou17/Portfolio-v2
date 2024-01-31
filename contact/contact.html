@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <title>Contact</title>
+</head>
+<body>
+    <main>
+        <h1>Contact</h1>
+        <form name="contact">
+            <div class="labelContainer">
+                <label for="name">Nom complet*</label>
+                <input name="name" type="text" placeholder="John Doe" required>
+            </div>
+            
+            <div class="labelContainer">
+                <label for="surname">Entreprise</label>
+                <input name="surname" type="text" placeholder="No Name factory" >
+            </div>
+            
+            <div class="labelContainer">
+                <label for="birthdate">Date de naissance*</label>
+                <input name="birthdate" type="date" required>
+            </div>
+            
+            <div class="labelContainer">
+                <label for="raison du contact" > Raison du contact</label>
+                <div id="genreContainer">
+                    <input type="radio" class="contactReason" name="reason" value="stage">
+                    <label for="stage">Proposition de stage</label>
+                    <input type="radio" class="contactReason" name="reason" value="information">
+                    <label for="information">Demande d'information</label>
+                </div>  
+            </div>
+            
+            <div class="labelContainer" >
+                <label for="pays">Pays*</label>
+                <select name="pays" required>
+                        <option value="france">France</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="canada">Canada</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="maroc">Maroc</option>
+                </select>    
+                
+            </div>
+
+            <div class="labelContainer">
+                <label for="postalcode">Code Postal*</label>
+                <input name="postalcode" type="text" placeholder="Insérez votre code postal ici" required>
+            </div>
+            
+            <div class="labelContainer" id="adress">
+                <label for="adress">Adresse*</label>
+                <textarea name="adress" placeholder="Insérez votre adresse ici" required></textarea>
+            </div>
+
+            <div class="labelContainer">
+                <label for="phonenumber">Numéro de téléphone</label>
+                <input name="phonenumber" type="tel" placeholder="Insérez votre numéro de portable ici" pattern="[0]{1}[0-9]{9}">
+            </div>
+
+            <div class="labelContainer">
+                <label for="mail">Adresse Mail*</label>
+                <input type="email" name="mail" placeholder="Insérez votre adresse email ici" required>
+            </div>
+
+        </form>
+
+        <p>Ces champs sont obligatoires</p>
+    </main>
+
+    <footer>
+    <button type="button">VALIDER</button>
+    </footer>
+    
+    <script src="contact.js"></script>
+
+</body>
+
+
+</html>

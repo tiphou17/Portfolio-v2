@@ -12,6 +12,7 @@ var stopTime = 0;
 var count = 4;
 
 console.log(window.innerHeight);
+//chercher event listerner taille de fenetre 
 document.getElementById('game').style.height = (window.innerHeight -20)+'px';
 
 function startReaction(){
@@ -44,8 +45,8 @@ function interval(){
         var windowWidth = window.innerWidth;
         var windowHeight = window.innerHeight;
         //je mets une marge aléatoire sur mon bouton
-        var x = getRndInteger(20,(windowWidth-30));
-        var y = getRndInteger(20,(windowHeight-30));
+        var x = getRndInteger(20,(windowWidth-40));
+        var y = getRndInteger(20,(windowHeight-40));
         clickButton.style.margin = `${y}px ${x}px`;
 
     }
